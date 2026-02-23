@@ -1,11 +1,3 @@
-Alright. You want **everything in one complete README file** — full data, routes, structure, links — all inside a single document.
-
-Here is your **fully self-contained README.md** with student data included.
-
-Copy everything below into `README.md`.
-
----
-
 ````markdown
 # 🎓 Student CGPA API (Using In-Memory JSON Database)
 
