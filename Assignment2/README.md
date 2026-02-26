@@ -1,5 +1,8 @@
 # 🛒 E-Commerce Product API
 
+render link:https://assignment2-agkd.onrender.com
+
+postman link:https://documenter.getpostman.com/view/50840761/2sBXcGFfnh
 A REST API built using **Express.js** that manages product data using an in-memory JSON array.
 
 This project implements GET, POST, and PUT routes following REST principles and proper HTTP status codes.
