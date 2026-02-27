@@ -39,9 +39,8 @@ app.post("/products", (req, res) => {
   if (!req.body) return res.status(400).json({ message: "Body required" });
 
   const { name, category, price, stock, rating } = req.body;
-  if (!name || !category || price == null || stock == null || rating == null) {
-    return res.status(400).json({ message: "All fields required" });
-  }
+  
+
 
   const newId = products.length > 0 ? products[products.length - 1].id + 1 : 1;
 
