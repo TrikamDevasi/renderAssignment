@@ -113,14 +113,14 @@ app.delete("/states/:id", (req, res) => {
     const state = states.find((state) => state.id === parseInt(req.params.id));
     if (!state) return res.status(404).json({ message: "State not found" });
     states.splice(states.indexOf(state), 1);
-    res.status(200).json(state);
+    res.status(204).send();
 })
 
 app.delete("/states/name/:stateName", (req, res) => {
     const state = states.find((state) => state.name === req.params.stateName);
     if (!state) return res.status(404).json({ message: "State not found" });
     states.splice(states.indexOf(state), 1);
-    res.status(200).json(state);
+    res.status(204).send();
 })
 
 app.delete("/states/low-literacy/:percentage", (req, res) => {
@@ -135,9 +135,7 @@ app.delete("/states/low-literacy/:percentage", (req, res) => {
     toDelete.forEach(state => {
         states.splice(states.indexOf(state), 1);
     });
-    res.status(200).json({
-        deletedCount: toDelete.length
-    });
+    res.status(204).send();
 });
 
 const PORT = process.env.PORT || 3000;
