@@ -23,16 +23,16 @@
 
 ## 🚀 Live Demo
 
-🔗 **Render Deployment:** [https://your-render-link.onrender.com](https://your-render-link.onrender.com)
+🔗 **Render Deployment:** https://assignment3-l7su.onrender.com
 
-📮 **Postman Documentation:** [https://your-postman-link.postman.co](https://your-postman-link.postman.co)
+📮 **Postman Documentation:** https://documenter.getpostman.com/view/50840761/2sBXcHhySD
 
 ---
 
 ## 📁 Project Structure
 
 ```
-state-stats-api/
+Assignment3/
 ├── index.js          # Main server file with all routes
 ├── package.json      # Project dependencies
 └── README.md         # Project documentation
@@ -45,7 +45,7 @@ state-stats-api/
 ### Prerequisites
 
 - Node.js v18+
-- npm
+- npm 
 
 ### Steps
 
@@ -71,15 +71,16 @@ Server runs at: `http://localhost:3000`
 
 ```json
 {
-  "express": "^4.x",
-  "cors": "^2.x"
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14"
 }
 ```
 
 Install with:
 
 ```bash
-npm install express cors
+npm install express cors nodemon
 ```
 
 ---
